@@ -14,12 +14,12 @@ echo 'ml.jonsam.site' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:jonsam-ng/fancy-machine-learnning.git
+  githubUrl=git@github.com:xugaoyi/vuepress-theme-vdoing.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://jonsam-ng:${GITHUB_TOKEN}@github.com/jonsam-ng/fancy-machine-learnning.git
-  git config --global user.name "jonsam"
-  git config --global user.email "jonsam.ng@foxmail.com"
+  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
+  git config --global user.name "xugaoyi"
+  git config --global user.email "894072666@qq.com"
 fi
 git init
 git add -A
