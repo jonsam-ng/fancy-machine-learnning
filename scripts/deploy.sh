@@ -12,19 +12,20 @@ cd docs/.vuepress/dist
 # deploy to github pages
 echo 'ml.jonsam.site' > CNAME
 
+git config --global user.name "wuqingshan"
+git config --global user.email "wuqingshan@xylink.com"
+
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
+  msg='deploy: deploy to pages'
   githubUrl=git@github.com:jonsam-ng/fancy-machine-learnning.git
 else
-  msg='来自github actions的自动部署'
+  msg='deploy: auto deploy by github actions'
   githubUrl=https://jonsam-ng:${GITHUB_TOKEN}@github.com/jonsam-ng/fancy-machine-learnning.git
-  git config --global user.name "wuqingshan"
-  git config --global user.email "wuqingshan@xylink.com"
 fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
+git push -f $githubUrl master:gh-pages
 
 # deploy to coding pages
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件

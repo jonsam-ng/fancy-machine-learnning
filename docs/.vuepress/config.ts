@@ -6,6 +6,8 @@ import plugins from "./config/plugin.config";
 import nav from "./config/nav.config";
 import social from "./config/social.config";
 
+const base = "/fancy-machine-learnning";
+
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing",
   locales: {
@@ -15,11 +17,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       description: "机器学习一站式笔记，学习机器学习、深度学习技术文章",
     },
   },
-  base: "/fancy-machine-learnning/",
+  base: `${base}/`,
   themeConfig: {
     nav,
     sidebarDepth: 1,
-    logo: "/img/logo.png",
+    logo: `${base}/img/logo.png`,
     repo: "jonsam-ng/fancy-machine-learnning",
     searchMaxSuggestions: 10,
     lastUpdated: "上次更新",
@@ -74,7 +76,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     htmlModules,
   },
   head: [
-    ["link", { rel: "icon", href: "/img/favicon32x32.ico" }],
+    ["link", { rel: "icon", href: `${base}/img/favicon32x32.ico` }],
     [
       "meta",
       {
