@@ -12,14 +12,15 @@ cd docs/.vuepress/dist
 # deploy to github pages
 echo 'ml.jonsam.site' > CNAME
 
+git config --global user.name "jonsam"
+git config --global user.email "2824804209@qq.com"
+
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy: deploy to pages'
   githubUrl=git@github.com:jonsam-ng/fancy-machine-learnning.git
 else
   msg='deploy: auto deploy by github actions'
   githubUrl=https://jonsam-ng:${GITHUB_TOKEN}@github.com/jonsam-ng/fancy-machine-learnning.git
-  git config --global user.name "jonsam"
-  git config --global user.email "2824804209@qq.com"
 fi
 git init
 git add -A
