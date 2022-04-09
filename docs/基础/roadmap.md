@@ -9,6 +9,8 @@ tags:
   - 学习路线
 ---
 
+<!-- more -->
+
 ## 参考
 
 - [NLP-RoadMap](https://github.com/KaiyuanGao/NLP-RoadMap)

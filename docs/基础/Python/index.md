@@ -8,3 +8,18 @@ categories:
 tags:
   - 
 ---
+
+<!-- more -->
+
+```js
+module.exports = {
+    plugins: [
+        {
+            name: 'custom-plugins',
+            globalUIComponents: ["GlobalTip"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+        }
+    ],
+}
+```
+
+![image](https://cdn.jsdelivr.net/gh/jonsam-ng/image-hosting@master/image.qncmxv8hdi8.webp)

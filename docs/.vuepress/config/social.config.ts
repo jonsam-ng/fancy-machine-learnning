@@ -1,6 +1,10 @@
+/*****************************************************************************************
+ *                                 配置社交媒体
+ ******************************************************************************************/
+
 // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
 export default {
-  iconfontCssFile: "//at.alicdn.com/t/font_3314748_jkz8oirrz8p.css",
+  // iconfontCssFile: "//at.alicdn.com/t/font_3314748_jkz8oirrz8p.css",
   icons: [
     {
       iconClass: "icon-youjian",

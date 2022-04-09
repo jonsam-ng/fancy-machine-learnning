@@ -2,6 +2,10 @@ import { UserPlugins } from "vuepress/config";
 import baiduCode from "./baiduCode"; // 百度统计hm码
 import dayjs from "dayjs";
 
+/*****************************************************************************************
+ *                                 配置插件
+ ******************************************************************************************/
+
 export default <UserPlugins>[
   "vuepress-plugin-baidu-autopush", // 百度自动推送
   [
@@ -97,4 +101,8 @@ export default <UserPlugins>[
       },
     },
   ],
+  {
+    name: "custom-plugins",
+    globalUIComponents: ["LastReadingPopup", "GlobalTip", "BlockToggle"], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+  },
 ];
