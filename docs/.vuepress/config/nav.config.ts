@@ -5,12 +5,16 @@ export default [
     link: "/basic/",
     items: [
       {
+        text: "RoadMap",
+        link: "/basic/roadmap/",
+      },
+      {
         text: "数理基础",
-        items: [],
+        items: [{ text: "开始上手", link: "/basic/math/index/" }],
       },
       {
         text: "Python",
-        items: [{ text: "Python 编程", link: "/pages/syntax/" }],
+        items: [{ text: "开始上手", link: "/basic/python/index/" }],
       },
     ],
   },

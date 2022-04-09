@@ -7,13 +7,14 @@ import nav from "./config/nav.config";
 import social from "./config/social.config";
 
 const base = "/fancy-machine-learnning";
+const siteName = "Fancy Machine Learnning";
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing",
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Fancy Machine Learnning",
+      title: siteName,
       description: "机器学习一站式笔记，学习机器学习、深度学习技术文章",
     },
   },
@@ -69,8 +70,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     social,
     footer: {
       createYear: 2022,
-      copyrightInfo:
-        'Fancy Machine Learnning | Made by <a href="https://www.jonsam.site" target="_blank">Jonsam</a> by ❤',
+      copyrightInfo: `${siteName} | Made by <a href="https://www.jonsam.site" target="_blank">Jonsam</a> by ❤`,
     },
     // 自定义html(广告)模块
     htmlModules,
