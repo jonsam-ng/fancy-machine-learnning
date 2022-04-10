@@ -16,7 +16,7 @@ const base = "/fancy-machine-learnning";
 const siteName = "Fancy ML";
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  theme: "vdoing",
+  theme: resolve(__dirname, "../../vdoing"),
   locales: {
     "/": {
       lang: "zh-CN",

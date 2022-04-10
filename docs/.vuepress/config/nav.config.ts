@@ -48,7 +48,12 @@ export default [
   {
     text: "更多",
     link: "/more/",
-    items: [],
+    items: [
+      {
+        text: "Q&A",
+        link: "/qa/",
+      },
+    ],
   },
   { text: "关于", link: "/about/" },
   {
