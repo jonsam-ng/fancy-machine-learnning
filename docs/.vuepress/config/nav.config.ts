@@ -25,13 +25,24 @@ export default [
   // ========== 机器学习 ========== //
   {
     text: "机器学习",
-    link: "/machine-learnning/",
-    items: [],
+    link: "/ml/",
+    items: [
+      {
+        text: "教程",
+        items: [
+          { text: "开始上手", link: "/ml/course/index/" },
+          {
+            text: "斯坦福大学2014（吴恩达）机器学习教程",
+            link: "/ml/course/ml-andrew/index/",
+          },
+        ],
+      },
+    ],
   },
   // ========== 深度学习 ========== //
   {
     text: "深度学习",
-    link: "/deep-learnning/",
+    link: "/dl/",
     items: [],
   },
   {

@@ -13,7 +13,7 @@ import {
 } from "./webSiteInfo/readFile";
 
 const base = "/fancy-machine-learnning";
-const siteName = "Fancy Machine Learnning";
+const siteName = "Fancy ML";
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing",
@@ -76,7 +76,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     social,
     footer: {
       createYear: 2022,
-      copyrightInfo: `${siteName} | Made by <a href="https://www.jonsam.site" target="_blank">Jonsam</a> by ❤`,
+      copyrightInfo: `<a href="https://ml.jonsam.site" target="_blank">${siteName}</a> | Made by <a href="https://www.jonsam.site" target="_blank">Jonsam</a> by ❤`,
     },
     // 自定义html(广告)模块
     htmlModules,

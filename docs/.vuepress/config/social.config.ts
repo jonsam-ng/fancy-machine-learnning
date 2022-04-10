@@ -24,7 +24,7 @@ export default {
     {
       iconClass: "icon-shuben",
       title: "文档",
-      link: "https://docs.jonsam.site",
+      link: "http://docs.jonsam.site",
     },
     {
       iconClass: "icon-code",
